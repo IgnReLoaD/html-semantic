@@ -237,12 +237,30 @@ mark {
     text-decoration-line: underline;
 }
 
+/* ------------- seccio de Xarxes Socials ------------------------------------- */
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 30px;
+}
+
+.social-icons a i {
+    font-size: 2rem;
+    color: wheat;
+}
+
 /* ------------ seccio de Peu de pagina --------------------------------------- */
 
 footer {
     background-color: rgb(2, 72, 77);
     color: wheat;
-    margin-top: 70px;
+    margin-top: 50px;
     text-align: center;
     font-family: Helvetica, Arial;
 }
