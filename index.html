@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>TRAVELAND</title>
+
+        <meta name = "viewport"    content = "width=device-width, initial-scale=1.0">
+        <meta name = "description" content = "pagina web de estudio y repaso">
+        <meta name = "author"      content = "Alumno IT Academy BcnActiva">
+        <meta name = "keywords"    content = "repaso HTML semantico, estudio CSS, aprendizaje web">                
+
+        <!-- Icona personalitzada pestanya explorador -->
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <!-- Fonts Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+        <!-- el nostre CSS -->
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+    <body>
+        
+        <!-- Header - HTML5 semàntic -->
+        
+        <header class="flex-horizontal">
+            <hgroup class="header-brand">
+                <img src="img/ms-icon-70x70.png" alt="Logo de empresa ficticia" /> 
+            </hgroup>
+            <hgroup class="header-title">
+                <h1>TRAVELAND</h1>
+                <h2>destino: el rincón de los sueños</h2>
+            </hgroup>
+            <hgroup class="header-options">
+                <ul>
+                    <!-- <li> <img src="./img/carro.png" alt="Cesta compra"/> </li>   -->
+                    <li> <a href="#">Compra</a> </li>
+                    <li> <a href="#">Idioma</a> </li>
+                    <li> <a href="#">Log in</a> </li>
+                </ul>
+            </hgroup>                
+
+        </header>
+
+        <!-- Navigation - HTML5 semàntic -->
+        <nav>
+            <ul>
+                <li> <a href="#">Inicio</a> </li>
+                <li> <a href="#">Nosotros</a> </li>
+                <li> <a href="#">Sugerencias</a> </li>
+                <li> <a href="#">Galería</a> </li>
+                <li> <a href="#">Contacto</a> </li>
+            </ul>
+        </nav>
+
+        <!-- Figure - HTML5 semàntic ... unes Cards utilitzant Figure i FigCaption de Html5 -->
+        <section id="destacados">    
+            <figure>
+                <img src="./img/santorini.jpg" alt="Foto de Santorini" title="Santorini tooltip" />
+                <figcaption>
+                    <cite>Santorini Oia. &nbsp;</cite>
+                    Descubre <abbr title="situado en las islas de Grecia">Santorini</abbr> con su famoso sunset.
+                    <details>
+                        <summary>leer más...</summary>
+                        <p>Se trata de una opción mixta, tiene el bullicio de las tiendas y la calma de la playa. 
+                            Una combinación perfecta para disfrutar de sus vacaciones como jamás han experimentado. 
+                            Con todas las garantías sanitarias y un servicio exquisito.
+                        </p>
+                    </details>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/maldivas.jpg" alt="Foto de Maldivas" title="Maldivas tooltip" />
+                <figcaption>
+                    <cite>Maldivas Ressort. &nbsp;</cite>
+                    Máximo lujo en <abbr title="enmedio del Pacífico">Maldivas</abbr> con sus cabañas sobre el mar.
+                    <details>
+                        <summary>leer más...</summary>
+                        <p>Una opción de ensueño, las mejores playas del mundo, y tranquilidad total.
+                            Una combinación perfecta para disfrutar de sus vacaciones como jamás han experimentado. 
+                            Con todas las garantías sanitarias y un servicio exquisito.
+                        </p>
+                    </details>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/mexico.jpg" alt="Foto de Mexico" title="Mexico tooltip" />
+                <figcaption>
+                    <cite>Mexico playa Norte. </cite>
+                    Mezcla de historia y relax en <abbr title="en Mexico lindo">Isla Mujeres</abbr> &nbsp; a 30 min en barco desde Cancún.
+                    <details>
+                        <summary>leer más...</summary>
+                        <p>Se puede recorrer toda la isla en bicicleta. Para refrescarte y disfrutar del sol
+                            Una combinación perfecta para disfrutar de sus vacaciones como jamás han experimentado. 
+                            Con todas las garantías sanitarias y un servicio exquisito.
+                        </p>
+                    </details>
+                </figcaption>
+            </figure>        
+        </section>   
+
+        <!-- Main - HTML5 semàntic  -->
+        <main>
+
+            <article>
+                <h2>Fórmulas de viaje</h2>
+                <section>
+                    <p> Tenemos packs para viajes de novios 
+                        <mark> con regalo de bodas </mark>
+                        para estancias superiores a 8 pernoctaciones, así como un amplio abanico de ofertas en ocio y excursiones en la zona.
+                    </p>
+                    <p> También tenemos packs para viajar en grupo, consulte a nuestro agente para más información.</p>
+                </section>
+                <section>
+                    <p> Se permite viajar con su mascota
+                        <mark> máximo una </mark>
+                        para cada reserva, y siguiendo la normativa vigente.
+                    </p>
+                </section>                
+            </article>
+            <hr>
+            <article>
+                <h2>Seguro de viaje</h2>
+                <section>
+                    <p> Tenemos a su disposición varias opciones para viajar con toda <span id="security">seguridad</span>, especialmente en época de pandemia.
+                    </p>
+                </section>
+                <section>
+                    <p> Consulte las agencias que trabajan con nosotros, para una mayor tranquilidad.
+                        <ul>
+                            <li>Mapfre</li>
+                            <li>Generali</li>
+                            <li>Mutua Madrileña</li>
+                            <li>Allianz</li>
+                        </ul>
+                    </p>
+                </section>                
+            </article>       
+            <hr>
+            <article>
+                <h2>Normativas</h2>
+                <section>
+                    <p> Siguiendo las indicaciones del Departamento de Sanidad, así como de la <abbr title="Organización Muncial para la Salud">OMS</abbr> tenemos 
+                        a disposición del viajero todo tipo de información y recomendaciones.
+                    </p>
+                </section>
+            </article>       
+        </main> 
+
+        <section>
+            <a href="index.html">    
+
+            <button class="scroll" title="go to top"><span></span> </button>
+
+            </a>
+            <!-- <button class="scroll" title="go to top"><span></span><a href="index.html"></a> </button> -->
+        </section>
+
+        <footer>
+            <p>Website created under the mentoring of Barcelona Activa &#169; 2021 all rights reserved </p>   
+            <!-- el simbol del Copyright es pot fer amb &#169;  o amb  &copy;   -->
+        </footer>
+        
+    </body>
+</html>
