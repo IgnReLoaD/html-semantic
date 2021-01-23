@@ -1,8 +1,22 @@
-/* un element standard es representa tal qual */
-/* amb FLEX indiquem com les peces DIVs que estiguin a dins es distribuiran */
+/* peces generals - el selector per un element standard es representa tal qual */
+
+h1 {
+    font-size: 68px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 0px;
+}
+
 body{
     margin: 0;
-    font-family: "Oswald", sans-serif;    
+    font-family: 'Sofia', cursive;
+
+    /* flex-box  */
     display: flex;                     /* en format Flex */
     flex-direction: column;            /* una sota l'altra */
     justify-content: space-between;    /* repartits equidistantment */
@@ -26,56 +40,7 @@ body{
     justify-content: space-between;     /* repartits equidistantment */
 }
 
-/* una ID es representa amb el simbol # davant  */
-#destacados {
-    display: flex;
-    flex-direction: row;                
-    justify-content: space-between;     
-    height: 550px;
-}
-
-figure {
-    margin: 5px;
-    height: 90%;
-    width: 90%;
-    border-width: thin;
-    border-color: magenta;    
-    align-content: center;
-}
-
-figure img {
-    margin-left: 20px;
-    width: 92%;
-    height: 300px;
-    position: relative;
-    border-radius: 5%;
-}
-
-figcaption {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-details p {
-    text-align: justify;
-}
-
-summary {
-    border-style: none;
-    border-color: magenta;
-}
-
-h1 {
-    font-size: 68px;
-    font-style: italic;
-    margin-bottom: 0px;
-}
-
-h2 {
-    font-size: 24px;
-    font-style: italic;
-    margin-top: 0px;
-}
+/* ------------ seccio de Capçalera --------------------------------------- */
 
 header {
     background-image: url("./img/header-background.jpg");    /* un jpg ens ofereix més qualitat per una foto de paisatge */
@@ -84,6 +49,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;    
+    font-family: 'El Messiri', sans-serif;
 }
 
 .header-brand {
@@ -138,14 +104,12 @@ header {
     list-style: none;
 }
 
-/* Navigation */
+/* ------------ seccio de MENU NAV ---------------------------------- */
+
 nav {
-    font-family: Helvetica, Arial;
+    font-family: 'El Messiri', sans-serif;
     font-size: 17px;
     text-transform: uppercase;
-
-    /* background: #333; */
-    /* background: hsl(204, 45%, 28%); */
     background: #02484d;
     display: flex;
     justify-content: space-between;
@@ -163,8 +127,6 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex: 1;
-    margin-left: 20px; */
     list-style: none;
 }
   
@@ -186,40 +148,77 @@ nav ul li:hover {
     background: hsl(189, 34%, 47%);
 }
 
+/* ------------ seccio de Destacados --------------------------------------- */
+
+/* una ID es representa amb el simbol # davant  */
+#destacados {
+    display: flex;
+    flex-direction: row;                
+    justify-content: space-between;     
+    height: 550px;
+}
+
+figure {
+    margin: 5px;
+    height: 90%;
+    width: 90%;
+    border-width: thin;
+    border-color: magenta;    
+    align-content: center;
+}
+
+figure img {
+    margin-left: 20px;
+    width: 92%;
+    height: 300px;
+    position: relative;
+    border-radius: 5%;
+}
+
+figcaption {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+details p {
+    text-align: justify;
+}
+
+summary {
+    border-style: none;
+    border-color: magenta;
+}
+
 #destacados > figure:nth-child(1) > figcaption > details > p {
     padding-bottom: 30px;
 }
 
+/* ------------ seccio Principal - continguts articles i posts ----------------------- */
+
 main {
-    background-color: rgb(143, 189, 192);        
+    background-color: rgb(2, 72, 77);
+    color: wheat;    
+    /* background-color: rgb(143, 189, 192);         */
     align-self: center;
     padding: 30px;
     width: 65%;
-    float: left;
-    font-family: Helvetica, Arial;
-    /* border: 1px solid blue;  */
+    float: left;    
+    font-family: 'El Messiri', sans-serif;
     box-shadow: 0px 0px 25px gray;
 }
 
 body > main > article > h2 {
-    color: rgb(2, 72, 77);
+    color: wheat;    
+    /* color: rgb(2, 72, 77); */
 }
  
 main p {
     text-align: justify;
-    font-family: "Arial Narrow";
 }
 
 article {
     margin-top: 30px;
     margin-bottom: 50px;
-}
-
-footer {
-    background-color: rgb(2, 72, 77);
-    color: wheat;
-    margin-top: 70px;
-    text-align: center;
 }
 
 body > main > article > section {
@@ -228,10 +227,27 @@ body > main > article > section {
     text-align: justify;
 }
 
+mark {
+	background-color: pink;
+    text-decoration: underline;
+}
+
 #security {
     color: red;
     text-decoration-line: underline;
 }
+
+/* ------------ seccio de Peu de pagina --------------------------------------- */
+
+footer {
+    background-color: rgb(2, 72, 77);
+    color: wheat;
+    margin-top: 70px;
+    text-align: center;
+    font-family: Helvetica, Arial;
+}
+
+/* ------------ botó retorn cap amunt de la pàgina ----------------------------- */
 
 .scroll {
     position:fixed;
@@ -241,13 +257,12 @@ body > main > article > section {
     width:20px;
     height:80px;
     background-color:  rgb(143, 189, 192);
-    /* hsl(189, 34%, 47%); */
     text-indent:-9999px;
     -webkit-border-radius:15px;
     -moz-border-radius:15px;
     border-radius:15px;
-    /* display: none; */
 }
+
 .scroll span {
     position:absolute;
     top:50%;
@@ -259,6 +274,7 @@ body > main > article > section {
     border:8px solid transparent;
     border-bottom-color: wheat;
 }
+
 .scroll:hover {
     background-color: rgb(2, 72, 77);
     opacity:1;filter:"alpha(opacity=100)";
