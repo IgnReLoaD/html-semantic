@@ -4,6 +4,7 @@
         <meta charset ="UTF-8">
         <title>TRAVELAND</title>
 
+        <!-- meta tags subministren info codificada a navegadors i motors de búsqueda -->
         <meta name = "viewport"    content = "width=device-width, initial-scale=1.0">
         <meta name = "description" content = "pagina web de estudio y repaso">
         <meta name = "author"      content = "Alumno IT Academy BcnActiva">
@@ -24,7 +25,7 @@
         
         <header class="flex-horizontal">
             <hgroup class="header-brand">
-                <img src="img/ms-icon-70x70.png" alt="Logo de empresa ficticia" /> 
+                <img class="logo" src="img/ms-icon-70x70.png" alt="Logo de empresa ficticia" /> 
             </hgroup>
             <hgroup class="header-title">
                 <h1>TRAVELAND</h1>
@@ -32,10 +33,10 @@
             </hgroup>
             <hgroup class="header-options">
                 <ul>
-                    <!-- <li> <img src="./img/carro.png" alt="Cesta compra"/> </li>   -->
-                    <li> <a href="#">Compra</a> </li>
-                    <li> <a href="#">Idioma</a> </li>
-                    <li> <a href="#">Log in</a> </li>
+                    <!-- Amb el CDN de Font Awesome podem utilitzar etiqueta i de Icones  -->
+                    <li> <a href="#">  <i class="fas fa-shopping-cart"></i> Compra</a> </li>
+                    <li> <a href="#">  <i class="fas fa-globe">        </i> Idioma</a> </li>
+                    <li> <a href="#">  <i class="fas fa-user">         </i> Log in</a> </li>
                 </ul>
             </hgroup>                
 
@@ -148,16 +149,14 @@
 
         <section>
             <a href="index.html">    
-
-            <button class="scroll" title="go to top"><span></span> </button>
-
+                <button class="scroll" title="go to top"><span></span> </button>
             </a>
             <!-- <button class="scroll" title="go to top"><span></span><a href="index.html"></a> </button> -->
         </section>
 
         <footer>
             <p>Website created under the mentoring of Barcelona Activa &#169; 2021 all rights reserved </p>   
-            <!-- el simbol del Copyright es pot fer amb &#169;  o amb  &copy;   -->
+            <!-- el simbol del Copyright es pot fer amb &#169; o amb  &copy;   -->
         </footer>
         
     </body>
